@@ -1,4 +1,4 @@
-# handJS - some missing but very useful functions of javascript
+# handyJS - some missing but very useful functions of javascript
 
 ## **<span style="color:red">this project is under development yet</span>**
 
