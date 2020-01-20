@@ -1,6 +1,5 @@
 var hf = {
     pathToPs: function (path, separator = 'byOs') {
-        // console.log(typeof separator);
         if (separator == 'byOs') {
             let platform = os.platform();
             if (platform == 'win32') directory_separator = '\\';
@@ -23,7 +22,6 @@ var hf = {
                 forReturn += item
             }
         });
-        console.log(forReturn);
         return forReturn;
     },
     checkforQExists: function (str) {
