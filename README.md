@@ -7,3 +7,4 @@ let path = hf.pathToPs('C:/Users/ashkan nasirzadeh/check.ps1', '/');
 //path: C:\"Users"\"ashkan nasirzadeh"\"check.ps1"
 child = spawn("powershell.exe",[path]);
 ```
+leave 'separator' parameter and it will use default DirectorySeparator by OS (like path module) (`const os = require('os')` needed)
