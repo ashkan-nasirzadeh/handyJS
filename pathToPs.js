@@ -1,6 +1,12 @@
 var hf = {
-    pathToPs: function (path, separator) {
+    pathToPs: function (path, separator = 'byOs') {
         // console.log(typeof separator);
+        if (separator == 'byOs') {
+            let platform = os.platform();
+            if (platform == 'win32') directory_separator = '\\';
+            else directory_separator = '/';
+            separator = directory_separator;
+        }
         let splited_1 = path.split(separator);
         let forReturn = '';
         let here = this;
